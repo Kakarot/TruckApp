@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TruckApp.Views.TruckItems"
+             Title="Truck Items">
+    
+    <ContentPage.Content>
+        <ListView  HasUnevenRows="True" SeparatorVisibility="Default" ItemsSource="{Binding FoodItem}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5">
+                            <Grid.RowDefinitions>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                             <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="0"></Label>
+                             <Label Text="{Binding AmountToMultiplyBy}" Grid.Row="0" Grid.Column="1"></Label>
+                             <Label Text="{Binding ItemSection}" Grid.Row="0" Grid.Column="2"></Label>
+
+                         </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+    
+</ContentPage>
