@@ -5,7 +5,7 @@
              Title="About">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="This App was built and is maintained by John Thompson. This App was built to help me simplify doing some of my work in my Department."
+            <Label Text="This App was built and is maintained by John Thompson. This App was created to help me simplify doing some of my work in my Department."
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
         </StackLayout>
